@@ -1,7 +1,21 @@
+/* General styles */
 * {
     font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body styling for background and centering */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00c851, #007e33);
+}
+
+/* Game container */
 #board, .boardInfo {
     max-width: 500px;
 }
@@ -35,6 +49,7 @@
     display: inline-flex;
 }
 
+/* Square styles */
 .square {
     aspect-ratio: 1;
 }
