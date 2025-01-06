@@ -17,6 +17,8 @@ body {
 
 /* Game container */
 #gameContainer {
+    height: 450px;
+    width: 500px:
     display: flex;
     flex-direction: column;
     align-items: center;
