@@ -17,16 +17,17 @@ body {
 
 /* Game container */
 #board, .boardInfo {
-    max-width: 500px;
+    max-width: 800px; /* Increase the width of the game board */
 }
 
 #board {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr); /* Adjust for larger cells */
+    gap: 5px; /* Add spacing between cells for better visibility */
 }
 
 #start, .boardInfo {
-    font-size: 25px;
+    font-size: 30px; /* Increase font size for better readability */
 }
 
 #gameOver {
@@ -36,34 +37,12 @@ body {
 .boardInfo {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px; /* Add more space between elements */
 }
 
 #start {
     background-color: #f35a69;
     border: none;
     color: white;
-}
-
-#scoreBoard {
-    display: inline-flex;
-}
-
-/* Square styles */
-.square {
-    aspect-ratio: 1;
-}
-
-.emptySquare {
-    background-color: #6d71b5;
-}
-
-.snakeSquare {
-    background-color: #e3e773;
-    border: 1px solid #000;
-}
-
-.foodSquare {
-    background-color: #55e7e7;
-    border: 1px solid #000;
-}
+    padding: 10px 20px; /* Make the button larger */
+    border-radius: 
