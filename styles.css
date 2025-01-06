@@ -16,33 +16,63 @@ body {
 }
 
 /* Game container */
-#board, .boardInfo {
-    max-width: 800px; /* Increase the width of the game board */
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between the board and info */
 }
 
+/* Game board */
 #board {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); /* Adjust for larger cells */
-    gap: 5px; /* Add spacing between cells for better visibility */
+    grid-template-columns: repeat(10, 1fr); /* Ensure a 10x10 grid */
+    gap: 5px; /* Space between squares */
+    max-width: 600px; /* Increased size for larger screens */
+    max-height: 600px;
+    width: 100%; /* Ensure responsiveness */
+    height: auto;
 }
 
-#start, .boardInfo {
-    font-size: 30px; /* Increase font size for better readability */
-}
-
-#gameOver {
-    display: none;
-}
-
+/* Buttons and scoreboard */
 .boardInfo {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* Add more space between elements */
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
 }
 
 #start {
     background-color: #f35a69;
     border: none;
     color: white;
-    padding: 10px 20px; /* Make the button larger */
-    border-radius: 
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scoreBoard {
+    display: inline-flex;
+    font-size: 20px;
+}
+
+/* Square styles */
+.square {
+    aspect-ratio: 1; /* Maintain square ratio */
+    width: 100%; /* Fill available grid space */
+}
+
+.emptySquare {
+    background-color: #6d71b5;
+}
+
+.snakeSquare {
+    background-color: #e3e773;
+    border: 1px solid #000;
+}
+
+.foodSquare {
+    backgr
